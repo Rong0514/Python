@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>尚 未 驗 證</title>
+	<meta charset="utf-8">
+	<style>
+		body::after {
+			content: "";
+			background: url('https://images.pexels.com/photos/23475/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.5;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;
+			backdrop-filter: blur(10px);
+		}
+	</style>
+</head>
+<body>
+	<h1>您尚未驗證</h1>
+	<form action="/loginverify/" method="POST">
+		<p><input type="email" placeholder="email" name="email" required/></p>
+		<button type="submit" >發送驗證信</button>
+	</form>
+</body>
+</html>
